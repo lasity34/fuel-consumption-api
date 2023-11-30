@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicles List</title>
+    <link rel="stylesheet" href="./vehicle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Vehicles List</h1>
+    <a href="/" class="back-to-home">Back to Home</a> <!-- Back to Home Link -->
+    <!-- list of vehicles will be displayed here -->
+    <div id="vehiclesList"></div>
+    <!-- Modal Structure (Initially Hidden) -->
+    <div id="vehicleModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Vehicle Details</h2>
+            <!-- Vehicle details will be populated here -->
+            <div id="vehicleDetails"></div>
+        </div>
+    </div>
+
+    <script type="module" src="vehicles.js"></script>
+</body>
+</html>

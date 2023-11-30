@@ -14,8 +14,6 @@ const connectionOptions = {
     ssl: process.env.NODE_ENV === 'production', // Enable SSL in production
 };
 
-
-
 const db = pgp(connectionOptions);
 
 const fuelConsumption = FuelConsumption(db);
@@ -25,8 +23,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static('public'));
-
 
 app.get('/api/vehicles', fuelConsumptionAPI.vehicles);
 app.get('/api/vehicle', fuelConsumptionAPI.vehicle);

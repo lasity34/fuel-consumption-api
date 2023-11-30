@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
+
+.link-box {
+    width: 150px;
+    height: 150px;
+   
+    padding: 10px;
+
+    text-align: center;
+}
+
+.link-box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.link-box p {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.link-box a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .links {
+        flex-direction: column;
+    }
+
+    .link-box {
+        margin-bottom: 20px;
+    }
+}

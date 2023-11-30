@@ -1,16 +1,12 @@
 import FuelConsumption from '../fuel-consumption.js';
 import pgPromise from 'pg-promise';
 import assert from 'assert';
-import dotenv from "dotenv";
-
-dotenv.config();
-
 
 const pgp = pgPromise();
-
+const DATABASE_URL=  "postgresql://fuel:fuel@localhost:5432/fuel_consumption";
 
 const config = { 
-	connectionString : process.env.fuel_consumption_api_test_URL
+	connectionString : DATABASE_URL
 }
 
 if (process.env.NODE_ENV == 'production') {

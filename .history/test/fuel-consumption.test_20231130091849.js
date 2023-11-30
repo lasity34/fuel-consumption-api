@@ -3,14 +3,12 @@ import pgPromise from 'pg-promise';
 import assert from 'assert';
 import dotenv from "dotenv";
 
-dotenv.config();
-
 
 const pgp = pgPromise();
 
 
 const config = { 
-	connectionString : process.env.fuel_consumption_api_test_URL
+	connectionString : fuel_consumption_api_test_URL
 }
 
 if (process.env.NODE_ENV == 'production') {

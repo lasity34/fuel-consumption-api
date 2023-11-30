@@ -32,7 +32,7 @@ document.getElementById("refuelForm").addEventListener("submit", async (event) =
             liters,
             amount,
             distance,
-            filledUp: filledUp
+            filled_up: filledUp
         });
 
         if (response.data.status === "success") {

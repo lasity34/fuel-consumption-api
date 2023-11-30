@@ -49,7 +49,7 @@ axios
                         <p>Total Fuel Spent: R${vehicleData.total_amount}</p>
                         <p>Total litres spent: ${vehicleData.total_liters}L</p>
                         <p>Fuel Consumption: ${fuelConsumption}</p>
-                        <p>Total Distance Traveled: ${totalDistance}</p>
+                        <p>Total Distance Traveled: ${totalDistance}km</p>
                     `;
 
           // Display the modal

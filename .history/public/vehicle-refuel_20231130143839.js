@@ -25,14 +25,13 @@ document.getElementById("refuelForm").addEventListener("submit", async (event) =
     const messageElement = document.getElementById("message");
 
 
-    console.log(filledUp)
     try {
         const response = await axios.post('/api/refuel', {
             vehicleId,
             liters,
             amount,
             distance,
-            filledUp: filledUp
+            filled_up: filledUp
         });
 
         if (response.data.status === "success") {
